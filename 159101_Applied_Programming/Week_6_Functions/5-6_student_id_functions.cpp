@@ -6,6 +6,12 @@ out an action until 2 is entered. Display the array after each action.
 
 */
 
+/**
+
+6. Use functions (to delete and insert) to make the program in Q5 more readable.
+
+ */
+
 
 #include <iostream>
 using namespace std;
