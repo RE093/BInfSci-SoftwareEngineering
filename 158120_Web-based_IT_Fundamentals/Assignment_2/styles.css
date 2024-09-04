@@ -1,0 +1,88 @@
+/* Default styles reset */
+body,
+html {
+  padding: 0;
+  margin: 0;
+  background: #8affc1;
+  font-family: monospace, sans-serif;
+}
+
+/* nav element */
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+nav button {
+  background: darkred;
+  color: white;
+  border: white;
+  padding: 8px 12px;
+  margin-right: 16px;
+  border-radius: 4px;
+}
+
+.nav__sub-item {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+
+/* Main */
+#main__outer {
+  display: flex;
+}
+
+/* Left Navigation */
+aside {
+  height: calc(100vh - 50px - 32px);
+  width: 285px;
+  padding: 16px;
+  background: #60eaa1;
+}
+aside button {
+  width: 100%;
+  text-align: left;
+  background: #aeffd8;
+  color: darkred;
+  font-weight: 700;
+  border: 0;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+/* Main inner content */
+#main__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(100vw - 150px);
+  height: calc(100vh - 50px);
+}
+
+#main__inner--content {
+  padding: 16px;
+}
+
+#main__inner--content header img {
+  height: 90px;
+  border-radius: 48px;
+}
+
+article {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  padding: 16px;
+  background: #aeffd8;
+}
+
+article:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+/* Footer */
+footer {
+  background: #2d975e;
+  padding: 16px;
+}

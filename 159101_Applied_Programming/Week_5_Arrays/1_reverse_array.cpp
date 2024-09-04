@@ -5,8 +5,8 @@ another for loop to display the numbers in the reverse order. Do NOT sort.
 
  */
 
- #include <iostream>
- using namespace std;
+#include <iostream>
+using namespace std;
 
 float user_input;
 float input_array[7];
