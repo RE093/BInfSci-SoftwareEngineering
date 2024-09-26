@@ -13,8 +13,8 @@ using namespace std;
 
 int current_index;
 string current_input, names[100], numbers[100];
-fstream datafile;
 string filename = "contacts.txt";
+fstream datafile;
 
 bool open_file() {
     datafile.open(filename.c_str(), fstream::out);
@@ -32,6 +32,7 @@ void save_inputs_to_file(string user_input) {
 
 void close_file() {
     datafile.close();
+    cout << "Inputs have been saved.";
 }
 
 int main() {
@@ -47,7 +48,6 @@ int main() {
         getline(cin, current_input);
 
         if (current_input == "Q" || current_input == "q") {
-            cout << "Inputs have been saved.";
             break;
         }
 
